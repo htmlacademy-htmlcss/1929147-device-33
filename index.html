@@ -6,22 +6,24 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header user-navigation">
       <a class="header-logo" href="#"><img src="images/logo/logo-black.svg" width="145" height="36" alt="Логотип Девайс"></a>
-      <form  action="https://echo.htmlacademy.ru/" method="post">
+      <form class="form-search" action="https://echo.htmlacademy.ru/" method="post">
         <input class="search" type="search" placeholder="Текст поиска">
         <input class="search" type="submit" value="Найти">
       </form>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><img src="images/icons/login.svg" width="13" height="12" alt="Войти">Войти</a>
+            <a class="navigation-link navigation-link-login" href="#"><img src="images/icons/login.svg" width="13" height="12" alt="Войти">Войти</a>
+          </li>
+          <div class="comparison-shopping-cart">
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-comparison" href="#"><img src="images/icons/comparison.svg" width="10" height="12" alt="Сравнить">Сравнить</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><img src="images/icons/comparison.svg" width="10" height="12" alt="Сравнить">Сравнить</a>
+            <a class="navigation-link navigation-link-shopping-cart" href="#"><img src="images/icons/shopping-cart.svg" width="31" height="21" alt="Корзина">Корзина</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#"><img src="images/icons/shopping-cart.svg" width="31" height="21" alt="Корзина">Корзина</a>
-          </li>
+        </div>
         </ul>
       <nav class="navigation"> 
         <ul class="navigation-list">
@@ -44,7 +46,7 @@
         </ul>
       </nav>
       </header>
-      <main class="main-index">
+      <main class="main-container main-index">
         <h1 class="visually-hidden">Преимущества товаров</h1>
         <section class="products">
           <button class="slider-button slider-prev" type="button">
@@ -133,7 +135,7 @@
               <a  class="navigation-link navigation-link-menu" href="#"><img class="navigation-image" src="images/menu/menu-5.svg" width="56.01" height="97.98" alt="Умные часы">Умные часы</a>       
             </li>
             <li class="navigation-item">
-              <a  class="navigation-link navigation-link-menu" href="#"><img class="navigation-image" src="images/menu/menu-6svg.svg" width="132.03" height="69.01" alt="Квадрокоптер">Квадрокоптеры</a>       
+              <a  class="navigation-link navigation-link-menu" href="#"><img class="navigation-image" src="images/menu/menu-6.svg" width="132.03" height="69.01" alt="Квадрокоптер">Квадрокоптеры</a>       
             </li>
           </ul>
         </section>
@@ -143,19 +145,19 @@
           <p class="description service-description">Мы с удовольствием доставим ваш товар прямо<br>
             к вашему подъезду совершенно бесплатно! Ведь<br>
             мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            <img class="service-image service-image-delivery" src="images/services/delivery.png" width="136" height="164" alt="Доставка">
+            <img class="service-image service-image-delivery" src="images/services/delivery.svg" width="136" height="164" alt="Доставка">
             <button class="button button-guarantee" type="button">Гарантия</button>
             <h2 class="title title-service-guarantee">Гарантия</h2>
             <p class="description service-description">Если из-за возгорания купленного у нас товара у вас<br>
               сгорит дом — не переживайте, мы выдадим вам новый.<br>
               Товар, не дом, конечно же.</p>
-              <img class="service-image service-image-guarantee" src="images/services/guarantee.png" width="171" height="195" alt="Гарантия">
+              <img class="service-image service-image-guarantee" src="images/services/guarantee.svg" width="171" height="195" alt="Гарантия">
              <button class="button button-credit" type="button">Кредит</button>
               <h2 class="title title-service-credit">Кредит</h2>
               <p class="description service-description">Залезть в долговую яму стало проще!<br>
                  Кредитные консультанты подберут для вас наиболее выгодные<br>
                  условия кредита. Выгодные для банка, разумеется.</p>
-                 <img class="service-image service-image-credit" src="images/services/credit.png" width="156" height="188" alt="Кредит">
+                 <img class="service-image service-image-credit" src="images/services/credit.svg" width="156" height="188" alt="Кредит">
 
         </section>
         <section class="info">
