@@ -26,11 +26,16 @@ html {
     height: 100%;
 }
 
+.main-container {
+    flex-grow: 1;
+    
+}
+
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
-     min-height: 100%;
+    min-height: 100%;
     font-family: "Rubik", "Arial", sans-serif;
     font-style: normal;
     font-size: 18px;
@@ -39,27 +44,52 @@ body {
     color: #000000;
 }
 
+.page-header-container {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    flex-wrap: wrap;
+}
+
 .page-header {
     background-color: #ffe17f;
     color: #000000;
 }
 
-.user-navigation {
-    display: flex;
-    flex-direction: column;
-    width: 1160px;
-    margin: 0 auto;
-   
-}
-
 .header-logo {
     width: 145px;
-    margin: 0;
-    padding: 0;
+    margin-right: auto; 
+}
+
+.user-navigation {
+    display: flex;
+    width: 1040px;   
+}
+
+.navigation-list-catalog-services {
+    display: flex;
+    width: 1040px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.navigation-catalog {
+    width: 293px;
+    margin-right: 276px;
+}
+
+.navigation-services {
+    width: 471px;
+    margin-left: auto;
+
 }
 
 .form-search {
     width: 517px;
+    margin-right: 26px;
+    
 }
 
 .search {
@@ -67,19 +97,18 @@ body {
     line-height: 20px;
 }
 
-.navigation-link-login {
+.login {
     width: 231px;
+    margin-right: 26px;   
 }
 
 .comparison-shopping-cart {
     width: 240px;
-    margin-left: auto;
-    
-    
 }
 
-.main-container {
-    flex-grow: 1;
+.navigation-list-user-navigation {
+    display: flex;
+    width: 523px;
 }
 
 .main-index {
@@ -87,10 +116,52 @@ body {
     background-color: #ffffff;
 }
 
-.navigation-list {
-    width: 1040px;
-    margin: 0;
+.navigation {
+    display: flex;
+    width: 1040px;    
+}
+
+.page-container {
+    width: 1160px;
+    margin: 0 auto;
     padding: 0;
+}
+
+.slider-pagination {
+    padding: 0;
+}
+
+.slider-pagination-item {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    width: 1160px;
+    justify-content: space-between;
+}
+
+.slider-image {
+    width: 560px;
+    margin-right: 40px;
+}
+
+.slider-description {
+    width: 560px;    
+}
+
+.menu-navigation {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+}
+
+.menu-navigation-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 1160px;
+
 }
 
 .navigation-link {
@@ -162,8 +233,65 @@ body {
     background-color: #F0F0F0;   
 }
 
-.delivery {     
+.services-container {
+    display: flex;
+    flex-direction: column;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.service-delivery {
+    display: flex;
+    margin: 0 auto;   
+}
+
+.service-guarantee {
+    display: flex;
+    margin: 0 auto;
+}
+
+.service-credit {
+    display: flex;
+    margin: 0 auto;
+}
+
+.button-delivery,
+.button-guarantee,
+.button-credit {
+    width: 287px;
+}
+
+.title-description-delivery,
+.title-description-guarantee,
+.title-description-credit {
+    width: 452px;
+    margin-left: 116px;
+    margin-right: 106px;
+}
+
+.service-image-delivery,
+.service-image-guarantee,
+.service-image-credit {
+    margin-right: 63px;
+}
+
+.service-description {
+    width: 452px;
+}
+
+.info-delivery {
+    display: flex;
+    margin: 70px auto;
+    width: 1160px;    
+}
+
+.info-image-delivery {
     background-color: #ffe17f;
+    width: 125px;    
+}
+
+.info-image-faq {
+    width: 125px;  
 }
 
 .title-delivery {
@@ -175,6 +303,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #000000;
+    width: 910px;
 }
 
 .transport-navigation-list {
@@ -197,6 +326,19 @@ body {
 
 .index-columns {
     background-color: #ffffff;
+    display: flex;
+    margin: 0 auto 70px auto;
+    width: 1160px;
+    justify-content: space-between;
+}
+
+.about-us {
+    width: 520px;
+    margin-right: 108px;
+}
+
+.contacts {
+    width: 532px;
 }
 
 .contacts-address {
@@ -206,6 +348,46 @@ body {
 .mailing-list {
     background-color: #F0F0F0;
     color: #000000;
+    
+}
+
+.mailing-list-container {
+    display: flex;
+    margin: 0 auto;
+    width: 1160px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.title-mailing-list{
+    width: 348px;
+    margin-right: 252px;
+}
+
+.description-mailing-list {
+    width: 560px;
+}
+
+.mailing-list-email {
+    display: flex;
+    width: 1158px;
+    margin: 0 auto;
+    justify-content: space-between;    
+}
+
+.subscription {
+    width: 810px;
+}
+
+.its-free {
+    width: 160px;
+    margin-left: 188px;
+}
+
+.page-footer-container {
+    display: flex;
+    margin: 0 auto;
+    width: 1160px;   
 }
 
 .page-footer {
@@ -213,9 +395,20 @@ body {
     color: #ffffff;
 }
 
+.footer-address {
+    width: 239px;
+}
+
 .footer-text-address {
+    
     font-size: 16px;
     line-height: 19px;
+}
+
+.footer-navigation-list {
+    width: 444px;
+    margin-left: 112px;
+    margin-right: 190px;
 }
 
 .footer-navigation-link {
@@ -229,16 +422,34 @@ body {
     color: #ffffff;
 }
 
+.footer-social {
+    width: 150px;
+    margin-left: 266px;
+    margin-right: 330px;
+    
+}
+
 .footer-phone {
     font-size: 16px;
     line-height: 20px;
     text-decoration-line: underline; 
     color: #ffffff;
+    width: 175px;
+    
 }
 
 .inner-header{
     background-color: #ffffff;
     color: #000000;
+}
+
+.breadcrumbs {
+   display: flex;
+   margin: 0;
+   padding: 0; 
+   list-style-type: none;
+   width: 264px;
+   justify-content: space-between;
 }
 
 .breadcrumbs-link,
@@ -247,8 +458,35 @@ body {
    color: #000000;
 }
 
+.sorting-container {
+    display: flex;
+    width: 840px;
+    justify-content: space-between;
+}
+
 .catalog {
    background-color: #ffffff;
+}
+
+.catalog-products {
+    display: flex;
+}
+
+.filtres {
+    width: 200px;
+    margin: 0 auto;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.catalog-right-colomn {
+    width: 840px;
+}
+
+.product-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .product-card-title {
@@ -264,8 +502,16 @@ body {
    color: #444444;
 }
 
+.pagination-container {
+    display: flex;
+}
+  
 .pagination {
-   background-color: #EBEBEB;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #EBEBEB;
 }
 
 .pagination-link {
