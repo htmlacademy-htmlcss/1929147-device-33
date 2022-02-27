@@ -35,7 +35,7 @@
         <ul class="navigation-list-catalog-services">
           <div class="navigation-catalog">
           <li class="navigation-item">
-            <a class="navigation-navigation-link" href="#">Каталог товаров</a>
+            <a class="navigation-navigation-link link-catalog" href="#">Каталог товаров</a>
           </li>
           <li class="navigation-item">
             <button class=" button button-catalog" type="button">
@@ -43,13 +43,13 @@
           </li>
         </div>
         <div class="navigation-services">
-          <li class="navigation-item">
+          <li class="navigation-item-services">
             <a class="navigation-navigation-link" href="#">Доставка</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item-services">
             <a class="navigation-navigation-link" href="#">Гарантия</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item-services">
             <a class="navigation-navigation-link" href="#">Контакты</a>
           </li>
         </div>
@@ -59,7 +59,7 @@
   </div>
       </header>
       <main class="main-container main-index">
-        <div class="page-container">
+        
         <h1 class="visually-hidden" hidden>Преимущества товаров</h1>
         <section class="products">
           
@@ -80,7 +80,7 @@
                       мощным лазером, замаскированным под стандартную камеру.
                     </p>
                     <button class=" button button-more" type="button">Подробнее</button>
-                    <table>
+                    <table class="table-products-slider">
                       <tr class="indicators">
                         <th>800 м</th>
                         <th>50 м</th>
@@ -93,7 +93,7 @@
                     </div>             
             </li>
            </div>
-           <div class="products-slider">
+           <div class="products-slider visually-hidden">
             <li class="slider-pagination-item">              
                 <img class="slider-image" src="images/slider/slider-2.png" width="560" height="560" alt="Фитнес браслет">
                 <div class="slider-description">
@@ -103,7 +103,7 @@
                         не пропускать занятия и соблюдать диету.
                       </p>
                       <button class="button  button-more" type="button">Подробнее</button>
-                      <table>
+                      <table class="table-products-slider">
                         <tr class="indicators">
                           <th>48 часов</th>
                         </tr>
@@ -114,7 +114,7 @@
                     </div>             
             </li>
            </div>
-            <div class="products-slider">
+            <div class="products-slider visually-hidden">
             <li class="slider-pagination-item">              
                 <img class="slider-image" src="images/slider/slider-3.png" width="560" height="560" alt="Селфи-палка">
                 <div class="slider-description">
@@ -125,7 +125,7 @@
                          Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
                       </p>
                       <button class="button button-more" type="button">Подробнее</button>
-                      <table>
+                      <table class="table-products-slider">
                         <tr class="indicators">
                           <th>8,5 м</th>
                           <th>5 кг</th>
@@ -136,31 +136,31 @@
                           <td>Вес палки</td>
                           <td>Материал</td>
                         </tr>
-                      </table> 
-                      <div>         
+                      </table>
+                    </div>                            
             </li>
+          </div>
           </ol>
-        </div>
         </section>
         <section class="menu-navigation">
           <h2 class="visually-hidden" hidden>Категории товаров</h2>
           <ul class="menu-navigation-list">
-            <li class="navigation-item">
-              <a  class="navigation-link navigation-link-menu" href="#"><img class="navigation-image" src="images/menu/menu-1.svg" width="160" height="160" alt="Очки виртуальной реальности">Виртуальная реальность</a>       
+            <li class="navigation-item-menu-navigation">
+              <a  class="navigation-link navigation-link-menu" href="#"><img class="navigation-image" src="images/menu/menu-1.svg" width="160" height="160" alt="Очки виртуальной реальности">Виртуальная<br>реальность</a>       
             </li>
-            <li class="navigation-item">
-              <a  class="navigation-link navigation-link-menu" href="#"><img class="navigation-image" src="images/menu/menu-2.svg" width="160" height="160" alt="Селфи-палка">Моноподы для селфи</a>       
+            <li class="navigation-item-menu-navigation">
+              <a  class="navigation-link navigation-link-menu" href="#"><img class="navigation-image" src="images/menu/menu-2.svg" width="160" height="160" alt="Селфи-палка">Моноподы<br>для селфи</a>       
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item-menu-navigation">
               <a  class="navigation-link navigation-link-menu" href="#"><img class="navigation-image" src="images/menu/menu-3.svg" width="160" height="160" alt="Экшн-камера">Экшн-камеры</a>       
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item-menu-navigation">
               <a  class="navigation-link navigation-link-menu" href="#"><img class="navigation-image" src="images/menu/menu-4.svg" width="160" height="160" alt="Фитнес-браслет">Фитнес-браслеты</a>       
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item-menu-navigation">
               <a  class="navigation-link navigation-link-menu" href="#"><img class="navigation-image" src="images/menu/menu-5.svg" width="160" height="160" alt="Умные часы">Умные часы</a>       
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item-menu-navigation">
               <a  class="navigation-link navigation-link-menu" href="#"><img class="navigation-image" src="images/menu/menu-6.svg" width="160" height="160" alt="Квадрокоптер">Квадрокоптеры</a>       
             </li>
           </ul>
@@ -177,7 +177,7 @@
           </div>
             <img class="service-image service-image-delivery" src="images/services/delivery.svg" width="136" height="164" alt="Доставка">
           </div>
-          <div class="service-guarantee" >
+          <div class="service-guarantee visually-hidden">
             <button class="button button-guarantee" type="button">Гарантия</button>
             <div class="title-description-guarantee">
             <h2 class="title title-service-guarantee">Гарантия</h2>
@@ -187,7 +187,7 @@
             </div>
               <img class="service-image service-image-guarantee" src="images/services/guarantee.svg" width="171" height="195" alt="Гарантия">
             </div>
-            <div class="service-credit"> 
+            <div class="service-credit visually-hidden"> 
              <button class="button button-credit" type="button">Кредит</button>
              <div class="title-description-delivery">
               <h2 class="title title-service-credit">Кредит</h2>
@@ -258,13 +258,13 @@
                <div class="mailing-list-email">
                  <div class="subscription">
                <form action="https://echo.htmlacademy.ru/" method="post">
-                <input type="email" placeholder="Ваш e-mail">
-                <input type="submit" value="Подписаться">
+                <input class="email" type="email" placeholder="Ваш e-mail">
+                <input class="subscribe" type="submit" value="Подписаться">
               </form>
             </div>
               <div class="its-free">
               <img class="check-mark" src="images/icons/check-mark.svg" width="14" height="14" alt="Галочка">
-              <p class="description">Это бесплатно</p>
+              <p class="description description-its-free">Это бесплатно</p>
             </div>
             </div>
             </div>
@@ -272,6 +272,7 @@
           </section>
         </div>
       </div>
+    </div>
       </main>
       <footer class="page-footer">
         <div class="page-footer-container">
@@ -314,7 +315,7 @@
               </ul>
             </section>
           </div>
-              <section class="footer-phone"> 
+              <section class="footer-phone-login-html"> 
                 <h2 class="visually-hidden" hidden>Номер телефона</h2>
                 <a class="footer-phone" href="tel:+78128121212">+7 812 812-12-12</a>
                 <a class="footer-logo-html" href="https://htmlacademy.ru/"><img src="images/logo/logo-html.svg" width="114.9" height="32.9" alt="Логотип HTML-Academy"></a>
