@@ -463,15 +463,15 @@ body {
     background: url("../images/icons/shopping-cart.svg") no-repeat 0 40%;
 }
 
-.navigation-item:hover {
+.navigation-link-user:hover {
     opacity: 0.6;
 }
 
-.navigation-item:active {
+.navigation-link-user:active {
     opacity: 0.3;
 }
 
-.navigation-item:focus {
+.navigation-link-user:focus {
     outline: 2px solid #AF4FFF;
     outline-offset: 2px;
 }
@@ -698,6 +698,11 @@ margin: 0;
     height: 100px; 
 }
 
+.button-info-delivery:hover {
+    background-color: #FFC700;
+}
+
+
 .info-faq {
     position: relative;
     display: block;
@@ -717,6 +722,10 @@ margin: 0;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
+}
+
+.info-faq:hover {
+    opacity: 1;
 }
 
 .title-delivery {
@@ -817,6 +826,27 @@ margin: 0;
     background-color: #ffe17f;
 }
 
+.button-services-container:hover:not(:first-child) {
+   background-color: #FFE17F;
+}
+
+.button-services-container:hover:first-child {
+    color: rgba(255, 225, 127, 0.6);
+}
+
+.button-services-container:active:not(:first-child) {
+    background-color: #FFCC33;
+}
+
+.button-services-container:active:first-child {
+    color: rgba(255, 225, 127, 0.3);
+}
+
+.button-services-container:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;   
+}
+
 .button-services-container {
     position: relative;
     z-index: 1;
@@ -856,6 +886,34 @@ margin: 0;
     width: 160px;
     height: 8px;
     background-color: #ffe17f;
+}
+
+.button-about-us:hover {
+    background-color: #FFE17F;
+    
+}
+
+.button-about-us:active {
+    background-color: #FFCC33;
+}
+
+.button-about-us:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px; 
+}
+
+.button-write-to-us:hover {
+    background-color: #FFE17F;
+    
+}
+
+.button-write-to-us:active {
+    background-color: #FFCC33;
+}
+
+.button-write-to-us:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px; 
 }
 
 .contacts-subtitle {
@@ -1860,6 +1918,19 @@ box-sizing: border-box;
     background-color: #ffe17f;
 }
 
+.delivery-form-button:hover {
+    background-color: #FFE17F;
+}
+
+.delivery-form-button:active {
+    background-color: #FFCC33;
+}
+
+.delivery-form-button:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px; 
+}
+
 .label-modal {
     font-family: 'Rubik';
     font-style: normal;
@@ -1909,6 +1980,26 @@ box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.range-toggle:hover {
+    opacity: 0.5;
+}
+
+.range-toggle:active {
+    background-color: #000000;
+    opacity: 1;
+}
+
+.range-toggle:focus {
+    border-radius: 100%;
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
+
+.range-input:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
 }
 
 .toggle-min {
@@ -2150,4 +2241,24 @@ box-sizing: border-box;
     border-top: 7px solid #FFC700;
 
 }
+
+.navigation-catalog-list:hover .subcatalog-list {
+    visibility: visible;
+}
+
+.slider-description-pagination-button:hover {
+    opacity: 0.6;
+}
+
+.slider-description-pagination-button:active {
+    opacity: 0.3;
+}
+
+.slider-description-pagination-button:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px; 
+}
+
+
+
 
