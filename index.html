@@ -18,7 +18,7 @@
       </form>
       <ul class="navigation-list-user-navigation">
         <li class="navigation-item">
-          <a class="navigation-link-user navigation-link-login" href="#">Войти</a>
+          <a class="navigation-link-user navigation-link-login navigation-link-login-index" href="#">Войти</a>
         </li>
         
         <li class="navigation-item">
@@ -26,19 +26,70 @@
         </li>
         <li class="navigation-item">
           <a class="navigation-link-user navigation-link-shopping-cart" href="#">Корзина</a>
+          <div class="popover popover-cart">
+            <button class="popover-close-button button button-light">
+              2
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+            <div class="popover-content">
+              <h2 class="visually-hidden popover-title">Корзина</h2>
+              <ul class="cart-items-list">
+                <li class="cart-item">
+                  <img class="product-popover" src="images/popover/product-cart-1.png" width="39" height="43" alt="Любительская селфи-палка">
+                  <p class="cart-item-name">Любительская селфи-палка</p>
+                  <button type="button" class="cart-item-button-close">
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <img class="product-popover" src="images/popover/product-cart-2.png" width="39" height="43" alt="Профессиональная селфи-палка">
+                  <p class="cart-item-name">Профессиональная селфи-палка</p>
+                  <button type="button" class="cart-item-button-close">
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="total-popover">
+              <p class="total-products">Товаров: 2</p>
+              <p class="total-price">Сумма: 2000 ₽</p>
+            </div>
+              <button type="button" class="button button-open-popover">Открыть корзину</button>
+            </div>
+        </div>
         </li>
       </ul>
       </div> 
       <nav class="navigation"> 
-        <ul class=" navigation-catalog-list"> 
+       <ul class=" navigation-catalog-list"> 
           <li class="navigation-catalog-item">
             <a class="navigation-navigation-link link-catalog" href="#">Каталог товаров</a>
           </li>
-          <li class="navigation-catalog-item">
+          <li class="navigation-catalog-open-item">
             <button class=" button button-catalog" type="button">
              <img src="images/icons/catalog.svg" width="50" height="50" alt="Открыть каталог"> 
               </button>
           </li>
+          
+          <ul class="subcatalog-list">
+            <li class="subcatalog-item virt-real-item">
+              <a  class="subcatalog-link" href="#">Виртуальная реальность</a>
+            </li>
+            <li class="subcatalog-item monopods-item">
+              <a  class="subcatalog-link" href="#">Моноподы для селфи</a>
+            </li>
+            <li class="subcatalog-item cameras-item">
+              <a  class="subcatalog-link" href="#">Экшн-камеры</a>
+            </li>
+            <li class="subcatalog-item fitness-item">
+              <a  class="subcatalog-link" href="#">Фитнес-браслеты</a>
+            </li>
+            <li class="subcatalog-item watchesl-item">
+              <a  class="subcatalog-link" href="#">Умные часы</a>
+            </li>
+            <li class="subcatalog-item copters-item">
+              <a  class="subcatalog-link" href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
         </ul>
          <ul class="navigation-services-list navigation-list-catalog-services">
           <li class="navigation-item-services">
@@ -79,7 +130,7 @@
        </div>
        <div class="slider-right">
          <ol class="slider-description-list">
-           <li class="slider-description-item">
+           <li class="slider-description-item-copter">
             <b class=" title title-slider">Порхает как бабочка,<br>жалит как пчела!
             </b>
                 <p class="description slider-description slider-1" >Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
@@ -89,9 +140,9 @@
                 <button class=" button button-services button-more" type="button">Подробнее</button>
               </div>
                 <table class="table-products-slider">
-                  <tr class="indicators">
-                    <th>800 м</th>
-                    <th>50 м</th>
+                  <tr class="indicators-slider">
+                    <th class="indicator">800 м</th>
+                    <th class="indicator">50 м</th>
                   </tr>
                   <tr class="function">
                     <td>Дальность полёта</td>
@@ -107,12 +158,13 @@
     <li class="slider-pagination-item visually-hidden">
       <section class="slider">
         <h3 class="visually-hidden">Фитнес-браслет</h3>
+        <div class="background-slider"></div>
        <div class="slider-left">
         <img class="slider-image" src="images/slider/slider-2.png" width="560" height="560" alt="Фитнес браслет">
        </div>
        <div class="slider-right">
          <ol class="slider-description-list">
-           <li class="slider-description-item">
+           <li class="slider-description-item-fitness">
             <b class=" title title-slider">Худеем<br>правильно!
             </b>
                 <p class="description slider-description slider-1">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
@@ -122,8 +174,8 @@
                 <button class=" button button-services button-more" type="button">Подробнее</button>
               </div>
               <table class="table-products-slider">
-                <tr class="indicators">
-                  <th>48 часов</th>
+                <tr class="indicators-slider">
+                  <th class="indicator">48 часов</th>
                 </tr>
                 <tr class="function">
                   <td>Без подзарядки</td>
@@ -138,12 +190,13 @@
     <li class="slider-pagination-item visually-hidden">
       <section class="slider">
         <h3 class="visually-hidden">Селфи-палка</h3>
+        <div class="background-slider"></div>
        <div class="slider-left">
         <img class="slider-image" src="images/slider/slider-3.png" width="560" height="560" alt="Селфи-палка">
        </div>
        <div class="slider-right">
          <ol class="slider-description-list">
-           <li class="slider-description-item">
+           <li class="slider-description-item-selfi">
             <b class=" title title-slider">Делай селфи,<br>
               как Бен Стиллер! 
             </b>
@@ -154,10 +207,10 @@
                 <button class=" button button-services button-more" type="button">Подробнее</button>
               </div>
               <table class="table-products-slider">
-                <tr class="indicators">
-                  <th>8,5 м</th>
-                  <th>5 кг</th>
-                  <th>Карбон</th>
+                <tr class="indicators-slider">
+                  <th class="indicator">8,5 м</th>
+                  <th class="indicator">5 кг</th>
+                  <th class="indicator">Карбон</th>
                 </tr>
                 <tr class="function">
                   <td>Длина палки</td>
@@ -324,13 +377,10 @@
                  <label class="label-email">
                 <input class="email" type="email" placeholder="Ваш e-mail">
               </label>
-                <button class=" button-form-email subscribe" type="submit">Подписаться</button>
+                <button class="button button-form-email subscribe" type="submit">Подписаться</button>
               </form>
             </div>
-              <div class="its-free">
-              <img class="check-mark" src="images/icons/check-mark.svg" width="14" height="14" alt="Галочка">
               <p class="description description-its-free">Это бесплатно</p>
-            </div>
             </div>
             </div>
             </div>
@@ -344,8 +394,7 @@
         <section class="footer-address">
           <h2 class="visually-hidden" hidden>Адрес</h2>
           <a class="footer-logo" href="#"><img src="images/logo/logo-yellow.svg" width="144.9" height="36" alt="Логотип Девайс"></a>
-          <p class="footer-text-address">Санкт-Петербург, набережная<br>
-            реки Карповки, 5, литера П.</p>
+          <p class="footer-text-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           </section>
           <div class="footer-navigation-social">
             <ul class="footer-navigation-list"> 
@@ -416,7 +465,7 @@
                 </p>
                   <p class="field-group group-number">
                   <label class="label-modal label-products-number" for="products-number">Количество:</label>
-                  <input class="delivery-form-field field-number" type="number" min="1" step="1" id="products-number" name="products-number">
+                  <input class="delivery-form-field field-number" type="number" min="1" step="1" id="products-number" name="products-number"> 
                 </p>
               </div>
                 <button class="button delivery-form-button" type="submit">Отправить</button>
